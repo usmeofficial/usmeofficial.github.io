@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USMÉ — Digital Art & Visuals</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#080a0f;
+  color:#f2f0ea;
+  font-family:Arial,sans-serif;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 7%;
+  border-bottom:1px solid #20242c;
+}
+
+.logo{
+  font-size:25px;
+  letter-spacing:6px;
+  font-weight:bold;
+}
+
+.nav-link{
+  color:#aaa;
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:2px;
+}
+
+.hero{
+  min-height:75vh;
+  display:flex;
+  align-items:center;
+  padding:60px 7%;
+  background:
+  radial-gradient(circle at 75% 40%,#26354d 0%,transparent 30%),
+  linear-gradient(135deg,#080a0f,#10151e);
+}
+
+.hero-content{
+  max-width:700px;
+}
+
+.small{
+  color:#899bb5;
+  letter-spacing:5px;
+  font-size:12px;
+  margin-bottom:20px;
+}
+
+h1{
+  font-family:Georgia,serif;
+  font-size:clamp(55px,12vw,120px);
+  line-height:.9;
+  font-weight:400;
+}
+
+.hero p{
+  color:#a9adb5;
+  max-width:500px;
+  line-height:1.7;
+  margin:30px 0;
+}
+
+.button{
+  display:inline-block;
+  padding:15px 25px;
+  background:#eeeae1;
+  color:#090b10;
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:bold;
+}
+
+section{
+  padding:75px 7%;
+}
+
+.section-title{
+  font-family:Georgia,serif;
+  font-size:40px;
+  font-weight:400;
+  margin-bottom:10px;
+}
+
+.section-sub{
+  color:#777d88;
+  margin-bottom:35px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:#10131a;
+  border:1px solid #222731;
+  padding:15px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#59677d;
+}
+
+.art{
+  height:300px;
+  display:flex;
+  align-items:flex-end;
+  padding:22px;
+  background:
+  radial-gradient(circle at 70% 25%,#394c68,transparent 25%),
+  linear-gradient(145deg,#171b25,#050609);
+}
+
+.art span{
+  font-family:Georgia,serif;
+  font-size:27px;
+  letter-spacing:3px;
+}
+
+.card h3{
+  margin-top:17px;
+  font-family:Georgia,serif;
+  font-size:20px;
+  font-weight:400;
+}
+
+.price{
+  color:#9aa8bd;
+  margin-top:8px;
+  margin-bottom:15px;
+}
+
+.buy{
+  color:#eee;
+  text-decoration:none;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.about{
+  background:#0d1016;
+  text-align:center;
+}
+
+.about p{
+  max-width:650px;
+  margin:20px auto;
+  color:#949aa5;
+  line-height:1.8;
+}
+
+footer{
+  padding:35px 7%;
+  border-top:1px solid #20242c;
+  color:#666c76;
+  font-size:12px;
+  letter-spacing:2px;
+  text-align:center;
+}
+
+@media(max-width:600px){
+  nav{
+    padding:20px 5%;
+  }
+
+  .hero{
+    padding:50px 5%;
+    min-height:70vh;
+  }
+
+  section{
+    padding:60px 5%;
+  }
+
+  .art{
+    height:260px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">USMÉ</div>
+  <a class="nav-link" href="#collections">COLLECTIONS</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="small">DIGITAL ART & VISUALS</div>
+
+    <h1>MORE THAN<br>JUST<br>WALLPAPERS.</h1>
+
+    <p>
+      Cinematic digital art created for dreamers,
+      thinkers and the restless.
+    </p>
+
+    <a class="button" href="#collections">EXPLORE COLLECTIONS</a>
+  </div>
+</section>
+
+<section id="collections">
+
+  <div class="small">USMÉ COLLECTIONS</div>
+  <h2 class="section-title">AFTER DARK</h2>
+  <p class="section-sub">
+    A collection for the nights that feel different.
+  </p>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="art">
+        <span>02:17 AM</span>
+      </div>
+      <h3>02:17 AM</h3>
+      <div class="price">Rs. 299</div>
+      <a class="buy" href="#">VIEW ART →</a>
+    </div>
+
+    <div class="card">
+      <div class="art">
+        <span>NO SIGNAL</span>
+      </div>
+      <h3>NO SIGNAL</h3>
+      <div class="price">Rs. 299</div>
+      <a class="buy" href="#">VIEW ART →</a>
+    </div>
+
+    <div class="card">
+      <div class="art">
+        <span>THE STRANGER</span>
+      </div>
+      <h3>THE STRANGER</h3>
+      <div class="price">Rs. 299</div>
+      <a class="buy" href="#">VIEW ART →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="about">
+
+  <div class="small">THE STUDIO</div>
+
+  <h2 class="section-title">WEAR YOUR STORY.</h2>
+
+  <p>
+    USMÉ is an independent digital art studio creating
+    cinematic wallpapers, posters and visual collections.
+    Every piece is designed to feel like a story.
+  </p>
+
+</section>
+
+<footer>
+  USMÉ® — DIGITAL ART & VISUALS
+  <br><br>
+  DREAM · EXPLORE · COLLECT
+</footer>
+
+</body>
+  </html>
